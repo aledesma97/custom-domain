@@ -1,3 +1,16 @@
-h2 {
-    color : blue;
+
+/* /////////// Biography Styling //////////// */
+section.biography {
+    background: #331832;
+    padding: 30px;
+    width: 100%;
+}
+
+.biography h1 {
+    color: #69FFC2;
+}
+
+.biography h3,
+.biography p {
+    color: #FFEDE1;
 }
