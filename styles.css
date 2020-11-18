@@ -1,9 +1,21 @@
+/* /////////// Global Styling //////////// */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    margin: 10px 0;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Lato';
+}
 
 /* /////////// Biography Styling //////////// */
 section.biography {
     background: #331832;
     padding: 30px;
-    width: 100%;
 }
 
 .biography h1 {
@@ -14,3 +26,38 @@ section.biography {
 .biography p {
     color: #FFEDE1;
 }
+
+
+/* /////////// Skills Styling //////////// */
+.skills {
+    background: #69FFC2;
+    height: 350px;
+}
+
+.flex {
+    background: white;
+    border-radius: 30px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .design,
+  .tools {
+  /*   border: 2px solid green; */
+    text-align: left;
+    width: 50%;
+    padding: 60px 35px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tools ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
