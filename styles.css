@@ -12,10 +12,53 @@ h1 {
     font-family: 'Lato';
 }
 
+/* /////////// Nav Styling //////////// */
+nav {
+    width: 100%;
+    height: 50px;
+    background: #331832;
+    position: sticky;
+    top: 0;
+  }
+  
+  ul {
+    list-style:none;
+    
+  }
+  
+  .nav-link {
+    float: right;
+  }
+  
+  .nav-link a {
+    display: block;
+    text-decoration: none;
+    color: #FFEDE1;
+    text-align: center;
+    padding: 14px 36px;
+  }
+  
+  .nav-link a:hover {
+    background: #1f0e1e;
+  }
+
 /* /////////// Biography Styling //////////// */
 section.biography {
     background: #331832;
-    padding: 30px;
+}
+
+.content {
+    width: 70%;
+    padding: 20px 60px;
+}
+
+.biography img {
+    width: 400px;
+    border-radius: 20%;
+}
+
+.bio-copy  {
+
 }
 
 .biography h1 {
@@ -37,7 +80,7 @@ section.biography {
 .flex {
     background: white;
     border-radius: 30px;
-    width: 60%;
+    width: 40%;
     margin: 0 auto;
     display: flex;
     flex-wrap: nowrap;
