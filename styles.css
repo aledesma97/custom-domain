@@ -1,106 +1,132 @@
 /* /////////// Global Styling //////////// */
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 section {
-    margin: 10px 0;
-    width: 100%;
+  margin: 10px 0;
+  width: 100%;
 }
 
 h1 {
-    font-family: 'Lato';
+  font-family: 'Lato';
 }
 
 /* /////////// Nav Styling //////////// */
 nav {
-    width: 100%;
-    height: 50px;
-    background: #331832;
-    position: sticky;
-    top: 0;
-  }
+  width: 100%;
+  height: 50px;
+  background: #331832;
+  position: sticky;
+  top: 0;
+}
+
+ul {
+  list-style:none;
   
-  ul {
-    list-style:none;
-    
-  }
-  
-  .nav-link {
-    float: right;
-  }
-  
-  .nav-link a {
-    display: block;
-    text-decoration: none;
-    color: #FFEDE1;
-    text-align: center;
-    padding: 14px 36px;
-  }
-  
-  .nav-link a:hover {
-    background: #1f0e1e;
-  }
+}
+
+.nav-link {
+  float: right;
+}
+
+.nav-link a {
+  display: block;
+  text-decoration: none;
+  color: #FFEDE1;
+  text-align: center;
+  padding: 14px 36px;
+}
+
+.nav-link a:hover {
+  background: #1f0e1e;
+}
 
 /* /////////// Biography Styling //////////// */
 section.biography {
-    background: #331832;
+  background: #331832;
 }
 
 .content {
-    width: 70%;
-    padding: 20px 60px;
+  width: 70%;
+  padding: 20px 60px;
 }
 
 .biography img {
-    width: 400px;
-    border-radius: 20%;
-}
-
-.bio-copy  {
-
+  width: 400px;
+  border-radius: 20%;
 }
 
 .biography h1 {
-    color: #69FFC2;
+  color: #69FFC2;
 }
 
 .biography h3,
 .biography p {
-    color: #FFEDE1;
+  color: #FFEDE1;
+}
+
+/* /////////// Project Styling //////////// */
+.fig-container {
+display: flex;
+flex-wrap: wrap;
+}
+
+figure {
+scale: 1;
+box-shadow: 2px 2px 20px gray;
+border-radius: 10px;
+width: 300px;
+transition: scale .15s ease-in-out;
+}
+
+figure:hover {
+scale: 1.05;
+}
+
+img {
+border-radius: 10px 10px 0 0;
+}
+
+figcaption {
+font-weight: 700;
+padding: 10px 10px 20px 10px;
+}
+
+figcaption span {
+font-weight: 400;
 }
 
 
 /* /////////// Skills Styling //////////// */
 .skills {
-    background: #69FFC2;
-    height: 350px;
+  background: #69FFC2;
+  height: 350px;
 }
 
 .flex {
-    background: white;
-    border-radius: 30px;
-    width: 40%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  
-  .design,
-  .tools {
-  /*   border: 2px solid green; */
-    text-align: left;
-    width: 50%;
-    padding: 60px 35px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .tools ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  
+  background: white;
+  border-radius: 30px;
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.design,
+.tools {
+/*   border: 2px solid green; */
+  text-align: left;
+  width: 50%;
+  padding: 60px 35px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tools ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
