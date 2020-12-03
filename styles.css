@@ -1,17 +1,23 @@
 /* /////////// Global Styling //////////// */
 body {
   font-family: 'Montserrat', sans-serif;
+  color: #3f3f3f;
 }
 
 section {
-  margin: 10px 0;
+  margin: 20px 0;
   width: 100%;
+  padding: 30px;
 }
 
 h1 {
   font-family: 'Lato';
 }
 
+a, a:visited {
+  text-decoration: none;
+  color: #3f3f3f;
+}
 /* /////////// Nav Styling //////////// */
 nav {
   width: 100%;
@@ -19,6 +25,7 @@ nav {
   background: #331832;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 ul {
@@ -45,16 +52,27 @@ ul {
 /* /////////// Biography Styling //////////// */
 section.biography {
   background: #331832;
+  display: inline-block;
+  
 }
 
 .content {
   width: 70%;
   padding: 20px 60px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .biography img {
-  width: 400px;
-  border-radius: 20%;
+  width: 300px;
+  border-radius: 10%;
+  margin-right: 20px;
+  align-self: center;
+}
+
+.bio-copy {
+height: 300px;
+max-width: 300px;
 }
 
 .biography h1 {
@@ -66,10 +84,14 @@ section.biography {
   color: #FFEDE1;
 }
 
+
+
 /* /////////// Project Styling //////////// */
+
 .fig-container {
 display: flex;
 flex-wrap: wrap;
+justify-content: space-around;
 }
 
 figure {
@@ -129,4 +151,43 @@ ul {
 .tools ul{
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+/* /////////// Projects Page Styling //////////// */
+.intro-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.metadata {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.intro {
+  width: 50%;
+  margin-left: 15px;
+}
+
+.research,
+.results {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.metadata ul {
+  list-style: none;
+  padding: 0;
+}
+
+span {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 800px) {
+  .intro {
+    width: 70%;
+    margin-left: 0;
+  }
 }
