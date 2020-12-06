@@ -2,16 +2,22 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: #3f3f3f;
+  width: 100vw;
+  margin: 0;
 }
 
 section {
   margin: 20px 0;
-  width: 100%;
-  padding: 30px;
+  width: 100vw;
 }
 
 h1 {
   font-family: 'Lato';
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
 }
 
 a, a:visited {
@@ -22,6 +28,7 @@ a, a:visited {
 nav {
   width: 100%;
   height: 50px;
+  margin: 0;
   background: #331832;
   position: sticky;
   top: 0;
@@ -50,41 +57,36 @@ ul {
 }
 
 /* /////////// Biography Styling //////////// */
-section.biography {
-  background: #331832;
-  display: inline-block;
-  
-}
 
 .content {
   width: 70%;
-  padding: 20px 60px;
+  padding: 40px 60px;
   margin: 0 auto;
-  display: flex;
 }
 
 .biography img {
   width: 300px;
-  border-radius: 10%;
-  margin-right: 20px;
-  align-self: center;
+  border-radius: 50%;
+}
+
+.bio-copy, .image {
+  display: inline-block;
 }
 
 .bio-copy {
-height: 300px;
-max-width: 300px;
+  width: 300px;
 }
 
 .biography h1 {
   color: #69FFC2;
+  margin: 0px;
+  font-size: 2rem;
 }
 
-.biography h3,
-.biography p {
-  color: #FFEDE1;
+.biography h3 {
+  margin: 0;
+  font-size: 1.1rem;
 }
-
-
 
 /* /////////// Project Styling //////////// */
 
@@ -96,7 +98,7 @@ justify-content: space-around;
 
 figure {
 scale: 1;
-box-shadow: 2px 2px 20px gray;
+box-shadow: 10px 8px 20px gray;
 border-radius: 10px;
 width: 300px;
 transition: scale .15s ease-in-out;
@@ -122,17 +124,18 @@ font-weight: 400;
 
 /* /////////// Skills Styling //////////// */
 .skills {
-  background: #69FFC2;
-  height: 350px;
+  /* background: #69FFC2; */
 }
 
 .flex {
-  background: white;
+  background: rgb(238, 238, 238);
   border-radius: 30px;
   width: 40%;
   margin: 0 auto;
+  padding: 10px 40px;
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-around;
 }
 
 .design,
@@ -153,16 +156,58 @@ ul {
   grid-template-columns: 1fr 1fr;
 }
 
+/* /////////// Form Styling //////////// */
+.form {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+input, textarea {
+  background: rgb(238, 238, 238);
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+}
+
+input {
+  margin: 8px 0;
+}
+
+label {
+  padding: auto 0;
+}
+
+
 /* /////////// Projects Page Styling //////////// */
+button {
+  font-size: 1.1rem;
+  margin: 30px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  background: #331832;
+  color: white;
+}
+
+button:hover {
+  background: #1f0e1e;
+  scale: 1.05;
+}
+
+.project-heading { 
+  color: #69FFC2;
+}
+
 .intro-flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .metadata {
   width: 30%;
-  margin-right: 10px;
+  margin: 0 10px 0 0;
 }
 
 .intro {
@@ -172,7 +217,8 @@ ul {
 
 .research,
 .results {
-  width: 70%;
+  min-width: 45%;
+  max-width: 50%;
   margin: 0 auto;
 }
 
