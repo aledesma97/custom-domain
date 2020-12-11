@@ -7,8 +7,9 @@ body {
 }
 
 section {
-  margin: 20px 0;
+  margin: 100px 0;
   width: 100vw;
+  /* border-bottom:lightgray .75px solid; */
 }
 
 h1 {
@@ -59,7 +60,8 @@ ul {
 /* /////////// Biography Styling //////////// */
 
 .content {
-  width: 70%;
+  display: block;
+  width: 626px;
   padding: 40px 60px;
   margin: 0 auto;
 }
@@ -71,6 +73,10 @@ ul {
 
 .bio-copy, .image {
   display: inline-block;
+}
+
+.image {
+  margin-left: 20px;
 }
 
 .bio-copy {
@@ -108,9 +114,17 @@ figure:hover {
 scale: 1.05;
 }
 
-img {
+figure img {
 border-radius: 10px 10px 0 0;
+width: 300px;
+
 }
+
+
+/* #switch {
+  width: 300px;
+  height: 157px;
+} */
 
 figcaption {
 font-weight: 700;
@@ -230,6 +244,33 @@ button:hover {
 span {
   font-weight: 700;
 }
+
+/* ///////Images/////// */
+.project-top {
+  width: 70%;
+  margin: 0 auto;
+}
+#showcase {
+  width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.research img {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.end-product {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.end-1, .end-2 {
+  width: 49%;
+  margin: 0 auto;
+} 
 
 @media only screen and (max-width: 800px) {
   .intro {
